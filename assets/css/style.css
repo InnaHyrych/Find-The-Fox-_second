@@ -1,0 +1,152 @@
+/*Main style*/
+
+body {
+    background-color: white;
+    font-family: "Arvo", sans-serif;
+    color: #3B0918;
+    text-align: center;
+}
+
+/* Media queries -- For small screen sizes 320px - 480px width */    
+
+/*Header*/    
+
+h1 {
+font-size: 200%;
+color: #1A2F5E;
+}
+
+/*Logo in header*/
+
+.logo {
+color: #B8390E;
+font-size: 300%;
+margin-bottom: 2%;
+}
+
+.logo:hover {
+transform: scale(1.2);
+}
+
+/*Gaming zone*/
+
+img {
+width: 100%;
+display: none;        
+}
+
+#questions {
+font-size: 1.5rem; 
+font-family: Roboto, sans-serif;  
+}
+
+/*style for buttons*/
+
+#blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
+font-size: 2rem;
+}
+
+#blueanswer, #redanswer, #yellowanswer, #greenanswer {
+padding: 4%;    
+margin: 1.5%; 
+border-color: #B8390E;
+border-radius: 50%;  
+}
+
+#blueanswer > i:hover, #redanswer > i:hover, #yellowanswer > i:hover, #greenanswer > i:hover  {    
+transform: scale(1.2);    
+}
+
+#blue {
+color: rgb(2, 165, 230);    
+}
+
+#yellow {
+color: rgba(248, 152, 9, 0.877);
+}
+
+#green {
+color: rgb(5, 248, 57);
+}
+
+#red{
+color: red;
+}
+
+/*Button that appears when game is finish*/
+
+#finish {
+display: none;
+color:#3B0918;
+margin: 5%;
+float: right;
+position: relative;
+border-color: #f36c3f;
+border-bottom: 3px solid #B8390E;
+border-right: 3px solid #B8390E;
+border-radius: 0 10% 10% 10%;
+background: #f8beab;    
+}
+
+#finish:hover {
+transform: scale(1.2);
+}
+
+/* Media queries -- For screen sizes 768px - 1200px width */
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+#rooms-images {
+    width: 50%;
+    margin: auto 25%;
+}  
+
+#questions {
+    width: 50%;
+    margin: 3% 25%;
+}
+
+#blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
+    font-size: 3.5rem;
+}
+
+#blueanswer, #redanswer, #yellowanswer, #greenanswer {
+    margin: 1%;
+    padding: 3%;
+}
+#finish {
+    width: 5rem;
+    height: 2rem;
+    margin-right: 25%;
+}
+}
+
+/* Media queries -- For screen sizes bigger than 1200px width */
+
+@media screen and (min-width: 1200px) {
+
+#rooms-images {
+    width: 40%;
+    margin: auto 30%;
+}  
+
+#questions {
+    width: 40%;
+    margin: 2% 30%;
+}
+
+#blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
+    font-size: 2rem;
+}
+
+#blueanswer, #redanswer, #yellowanswer, #greenanswer {
+    margin: 1%;
+    padding: 2%;
+}
+
+#finish {
+width: 10rem;
+height: 3rem;
+margin-right: 30%;          
+}
+} 

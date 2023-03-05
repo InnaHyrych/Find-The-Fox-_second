@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Favicon links-->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Google fonts and font aweysome-->
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Lato&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+    
+
+    <title> Find the Fox</title>
+</head>
+
+<body>
+
+    <h1>Where Is The Fox?</h1>
+    <a href="https://www.saveafox.org/" target="_blank" rel="noopener"> <i class="fas fa-paw logo"></i></a>
+
+    <!--Game Photo-->
+
+        <div id="rooms-images">
+        
+            <img src="assets/images/house.jpg" alt="House" class="photo" id="house">
+            <img src="assets/images/corridor.jpg" alt="Corridor" class="photo" id="corridor">
+            <img src="assets/images/kitchen.jpg" alt="Kitchen" class="photo" id="kitchen">
+            <img src="assets/images/sitingroom.jpg" alt="Sitingroom" class="photo" id="sitingroom">
+            <img src="assets/images/bedroom.jpg" alt="Bedroom" class="photo" id="bedroom">
+            <img src="assets/images/diningroom.jpg" alt="Diningroom" class="photo" id="diningroom">
+            <img src="assets/images/astronaut.jpg" alt="Space" class="photo" id="space">
+            <img src="assets/images/fox.jpg" alt="Fox" class="photo" id="fox">
+
+        </div>
+
+        <div id="paragraph">
+            <p id="questions">Some question</p>
+        </div>
+    
+    <!--Selection buttons-->
+
+    <div id="question-area">
+        <button data-type="button"  class="door door-blue" id="blueanswer">
+            <i class="fas fa-map-marker-alt" id="blue"></i>
+            
+        </button>
+        <button data-type="button"  class="door door-red" id="redanswer">
+            <i class="fas fa-map-marker-alt" id="red"></i>
+        </button>
+        <button data-type="button" class="door door-yellow" id="yellowanswer">
+            <i class="fas fa-map-marker-alt" id="yellow"></i>
+        </button>
+        <button data-type="button" class="door door-green" id="greenanswer">
+            <i class="fas fa-map-marker-alt" id="green"></i>
+        </button>    
+    </div>
+
+    <button type="submit" id="finish">Play again</button>
+    
+<script src="assets/js/script.js"></script>    
+</body>
+
+</html>

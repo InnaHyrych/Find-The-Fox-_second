@@ -1,0 +1,20 @@
+{
+    "name": "Find-The-Fox",
+    "short_name": "Find-The-Fox",
+    "homepage": "https://innahyrych.github.io/Find-The-Fox-_second/",
+    "icons": [
+        {
+            "src": "./Find-The-Fox-_second/ android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./Find-The-Fox-_second/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
