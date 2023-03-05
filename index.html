@@ -24,43 +24,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
-
-    
-    
-
-    <title> Find the Fox</title>
+ 
+    <title> Find the Fox</title>    
 </head>
 
 <body>
 
-    <h1>Where Is The Fox?</h1>
-    <a href="https://www.saveafox.org/" target="_blank" rel="noopener"> <i class="fas fa-paw logo"></i></a>
+    <header>
+
+        <h1>Where Is The Fox?</h1>
+        <a href="https://www.saveafox.org/" target="_blank" rel="noopener"> <i class="fas fa-paw logo"></i></a>
+
+    </header>
 
     <!--Game Photo-->
-
-        <div id="rooms-images">
-        
-            <img src="assets/images/house.jpg" alt="House" class="photo" id="house">
-            <img src="assets/images/corridor.jpg" alt="Corridor" class="photo" id="corridor">
-            <img src="assets/images/kitchen.jpg" alt="Kitchen" class="photo" id="kitchen">
-            <img src="assets/images/sitingroom.jpg" alt="Sitingroom" class="photo" id="sitingroom">
-            <img src="assets/images/bedroom.jpg" alt="Bedroom" class="photo" id="bedroom">
-            <img src="assets/images/diningroom.jpg" alt="Diningroom" class="photo" id="diningroom">
-            <img src="assets/images/astronaut.jpg" alt="Space" class="photo" id="space">
-            <img src="assets/images/fox.jpg" alt="Fox" class="photo" id="fox">
-
-        </div>
+    <section id="rooms-images">        
+        <img src="assets/images/house.jpg" alt="House" class="photo" id="house">
+        <img src="assets/images/corridor.jpg" alt="Corridor" class="photo" id="corridor">
+        <img src="assets/images/kitchen.jpg" alt="Kitchen" class="photo" id="kitchen">
+        <img src="assets/images/sitingroom.jpg" alt="Sitingroom" class="photo" id="sitingroom">
+        <img src="assets/images/bedroom.jpg" alt="Bedroom" class="photo" id="bedroom">
+        <img src="assets/images/diningroom.jpg" alt="Diningroom" class="photo" id="diningroom">
+        <img src="assets/images/astronaut.jpg" alt="Space" class="photo" id="space">
+        <img src="assets/images/fox.jpg" alt="Fox" class="photo" id="fox">
+    </section>
+    
+    <section id = "text"> 
 
         <div id="paragraph">
             <p id="questions">Some question</p>
         </div>
-    
-    <!--Selection buttons-->
 
-    <div id="question-area">
+    </section>
+
+    <!--Selection buttons-->
+    <section id="question-area">
         <button data-type="button"  class="door door-blue" id="blueanswer">
-            <i class="fas fa-map-marker-alt" id="blue"></i>
-            
+            <i class="fas fa-map-marker-alt" id="blue"></i>            
         </button>
         <button data-type="button"  class="door door-red" id="redanswer">
             <i class="fas fa-map-marker-alt" id="red"></i>
@@ -70,12 +70,13 @@
         </button>
         <button data-type="button" class="door door-green" id="greenanswer">
             <i class="fas fa-map-marker-alt" id="green"></i>
-        </button>    
-    </div>
+        </button>
+    </section>      
 
     <button type="submit" id="finish">Play again</button>
-    
-<script src="assets/js/script.js"></script>    
+
+<script src="assets/js/script.js"></script> 
+
 </body>
 
 </html>
