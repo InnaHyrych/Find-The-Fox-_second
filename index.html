@@ -38,7 +38,8 @@
     </header>
 
     <!--Game Photo-->
-    <section id="rooms-images">        
+    <section id="rooms-images">
+        <img src="assets/images/fox2.jpg" alt="The big fox" class="photo" id="main_fox">        
         <img src="assets/images/house.jpg" alt="House" class="photo" id="house">
         <img src="assets/images/corridor.jpg" alt="Corridor" class="photo" id="corridor">
         <img src="assets/images/kitchen.jpg" alt="Kitchen" class="photo" id="kitchen">
@@ -51,13 +52,21 @@
     
     <section id = "text"> 
 
-        <div id="paragraph">
-            <p id="questions">Some question</p>
+        <div id="quiz">
+            <p id ="questions"></p>
+            <p id ="answers"></p>
+            <input type="text" id="user_answer">
+            
         </div>
+            <textarea disabled id = "text_area" rows="11">Some question</textarea>
+        
 
     </section>
 
+    <button type="submit" id="start">Play</button>
+
     <!--Selection buttons-->
+
     <section id="question-area">
         <button data-type="button"  class="door door-blue" id="blueanswer">
             <i class="fas fa-map-marker-alt" id="blue"></i>            

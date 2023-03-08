@@ -7,20 +7,23 @@ body {
     text-align: center;
 }
 
-/* Media queries -- For small screen sizes 320px - 480px width */    
+/* Media queries -- For small screen sizes 320px - 480px width */
+
+@media screen and (min-width: 320px) {
 
 /*Header*/    
 
 h1 {
 font-size: 200%;
 color: #1A2F5E;
+margin-bottom: 2%;
 }
 
 /*Logo in header*/
 
 .logo {
 color: #B8390E;
-font-size: 300%;
+font-size: 250%;
 margin-bottom: 2%;
 }
 
@@ -28,19 +31,44 @@ margin-bottom: 2%;
 transform: scale(1.2);
 }
 
-/*Gaming zone*/
+/*Photo zone*/
 
 img {
-width: 100%;
-display: none;        
+width: 60%;
+height: 50%;
+display: none;
+margin-left: auto;  
+margin-right: auto;      
 }
 
-#questions {
-font-size: 1.5rem; 
-font-family: Roboto, sans-serif;  
+/*Question and text*/
+
+#text {
+    margin: 3% auto
+}
+#quiz {
+    display: none;
+}
+
+#text_area {
+font-size: 1rem; 
+font-family: Roboto, sans-serif;
+text-align: center;
+width: 100%;
+border: none;
+overflow: auto;
+outline-style: none;
+font-size: 1rem;
+font-family: Roboto, sans-serif;
+resize: none; 
+background-color: inherit;
 }
 
 /*style for buttons*/
+
+#question-area {
+    display: none;
+}
 
 #blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
 font-size: 2rem;
@@ -48,7 +76,7 @@ font-size: 2rem;
 
 #blueanswer, #redanswer, #yellowanswer, #greenanswer {
 padding: 4%;    
-margin: 1.5%; 
+margin: 0.5% 1.5% 0.5% 1.5%; 
 border-color: #B8390E;
 border-radius: 50%;  
 }
@@ -75,7 +103,7 @@ color: red;
 
 /*Button that appears when game is finish*/
 
-#finish {
+#finish, #start {
 display: none;
 color:#3B0918;
 margin: 5%;
@@ -91,6 +119,7 @@ background: #f8beab;
 #finish:hover {
 transform: scale(1.2);
 }
+}
 
 /* Media queries -- For screen sizes 768px - 1200px width */
 
@@ -99,7 +128,12 @@ transform: scale(1.2);
 #rooms-images {
     width: 50%;
     margin: auto 25%;
-}  
+} 
+
+#text_area {
+
+    width: 60%;
+}
 
 #questions {
     width: 50%;
@@ -117,7 +151,10 @@ transform: scale(1.2);
 #finish {
     width: 5rem;
     height: 2rem;
-    margin-right: 25%;
+    margin: 5% 45%;
+}
+#start {
+    margin: auto 25%
 }
 }
 
@@ -129,6 +166,10 @@ transform: scale(1.2);
     width: 40%;
     margin: auto 30%;
 }  
+
+#text_area {
+    width: 60%;
+}
 
 #questions {
     width: 40%;
@@ -147,6 +188,10 @@ transform: scale(1.2);
 #finish {
 width: 10rem;
 height: 3rem;
-margin-right: 30%;          
+margin: 5% 45%;         
+}
+
+#start {
+    margin: auto 25%
 }
 } 
